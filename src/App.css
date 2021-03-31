@@ -1,11 +1,9 @@
 .header {
   height: 6em;
-  background-color: red;
 }
 
 
 .header__logo__row {
-  background-color: blue;
   padding: .75em;
 }
 
