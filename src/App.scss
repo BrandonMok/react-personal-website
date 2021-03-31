@@ -1,0 +1,51 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+$primary: #1c1d25;
+
+/** Header **/
+.header {
+  height: 6em;
+  width: 100%;
+  position: fixed;
+  padding: 0 2em;
+  background-color: $primary;
+
+  &__logo__row {
+    padding: .75em;
+
+    &__image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+/** Main menu **/
+.header__menu__row {
+  display: flex;
+  align-items: center;
+
+  ul.main-menu {
+    padding-right: 4em;
+
+    & > li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 1em;
+      font-size: 1.2rem;;
+
+      & > a {
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+/* @include media-breakpoint-down(xs) {  } */
+/* @include media-breakpoint-down(sm) {  } */
+// @include media-breakpoint-down(md) { 
+
+// } 
+/* @include media-breakpoint-down(lg) {  } */

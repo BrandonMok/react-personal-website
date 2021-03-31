@@ -1,17 +1,21 @@
 import logo from '../logo.png';
 
+
 /**
  * Header
  * @returns Array
  */
 function Header() {
     return (
-        <div class="header d-flex flex-direction-row">
-            <div class="header__logo__row">
-                <img src={logo} alt="logo" class="header__logo__row__image" />
+        <div className="header d-flex justify-content-between flex-direction-row">
+            <div className="header__logo__row">
+                <img src={logo} alt="logo" className="header__logo__row__image" />
             </div>
-            <div class="">
-                menu goes here
+            <div className="header__menu__row">
+                <ul className="main-menu">
+                    <li><a href="#about" alt="About">About</a></li>
+                    <li><a href="#projects" alt="About">Projects</a></li>
+                </ul>
             </div>
         </div>
     );
