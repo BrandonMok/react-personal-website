@@ -55,6 +55,12 @@ $primary: #1d1d1d; // 1c1d25
 }
 
 
+// mobile nav
+#hamburger {
+  color: #ffffff;
+}
+
+
 /** Banner **/
 .banner {
   justify-content: center;
@@ -104,6 +110,10 @@ $primary: #1d1d1d; // 1c1d25
 @include media-breakpoint-up(md) { 
   .header__logo-row__name {
     display: inline-block;
+  }
+
+  #hamburger {
+    display: none;
   }
 
   .banner {
