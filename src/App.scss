@@ -29,6 +29,8 @@ $primary: #1d1d1d; // 1c1d25
 
     &__name {
       display: none;
+      color: #ffffff;
+      font-weight: bold;
     }
   }
 
@@ -38,10 +40,11 @@ $primary: #1d1d1d; // 1c1d25
     align-items: center;
   
     ul.main-menu {
+      display: none;
       padding-right: 4em;
   
       & > li {
-        display: inline-block;
+        display: inline;
         list-style-type: none;
         padding: 1em;
         font-size: 1.2rem;;
@@ -55,11 +58,43 @@ $primary: #1d1d1d; // 1c1d25
 }
 
 
-// mobile nav
+// Hamburger icon
 #hamburger {
   color: #ffffff;
 }
 
+#mobile-nav {
+  position: fixed;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 1s;
+  background-color: #f5f3f4;
+}
+
+#closebtn {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 3em;
+  margin-left: .5em;
+}
+
+#mobile-nav-items {
+  margin-top: 1em;
+  list-style: none;
+
+  li {
+    padding: 1em 0;
+    list-style: none;
+    
+    a {
+      color: $primary;
+      font-size: 1.3rem;
+    }
+  }
+}
 
 /** Banner **/
 .banner {
@@ -103,13 +138,16 @@ $primary: #1d1d1d; // 1c1d25
 }
 
 
-/* @include media-breakpoint-up(xs) {  } */
-@include media-breakpoint-up(sm) { 
-} 
-
 @include media-breakpoint-up(md) { 
-  .header__logo-row__name {
-    display: inline-block;
+  .header {
+    &__logo-row__name {
+      display: inline-block;
+    }
+    &__menu-row {
+      ul.main-menu {
+        display: block;
+      }
+    }
   }
 
   #hamburger {
@@ -124,4 +162,3 @@ $primary: #1d1d1d; // 1c1d25
     }
   }
 } 
-/* @include media-breakpoint-up(lg) {  } */

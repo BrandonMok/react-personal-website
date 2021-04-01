@@ -4,20 +4,35 @@ import $ from 'jquery';
 
 class Header extends React.Component {
     openNav() {
-        alert("it works");
+        $("#mobile-nav").css("width", "70%");
     }
+    closeNav() {
+        $("#mobile-nav").css("width", "0");
+    }
+
     render() {
         return (
             <div className="header d-flex justify-content-between flex-direction-row">
-
-
                 <div className="header__logo-row">
-                <span id="hamburger" onClick={this.openNav}>&#9776;</span>
+                    <span id="hamburger" onClick={this.openNav}>&#9776;</span>
                     <img src={logo} alt="logo" className="header__logo-row__image" />
                     <div className="header__logo-row__name">Brandon Mok</div>
                 </div>
                 <div className="header__menu-row">
                     
+                    <div id="mobile-nav">
+                        <a id="closebtn" onClick={this.closeNav}>&times;</a>
+                        {/* <div id="mobile-nav__content">
+                            <ul id="mobile-nav-items">
+                                <li><a href="#about" onClick={this.closeNav}>About</a></li>
+                                <li><a href="#projects" onClick={this.closeNav}>Projects</a></li>
+                            </ul>
+                        </div> */}
+                        <ul id="mobile-nav-items">
+                            <li><a href="#about" onClick={this.closeNav}>About</a></li>
+                            <li><a href="#projects" onClick={this.closeNav}>Projects</a></li>
+                        </ul>
+                    </div>
 
                     <ul className="main-menu">
                         <li><a href="#about" alt="About">About</a></li>
