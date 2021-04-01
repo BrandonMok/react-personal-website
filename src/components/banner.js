@@ -7,6 +7,7 @@ import BannerImg from '../icons/undraw_traveling.svg';
             <div className="banner d-flex justify-content-around align-items-center p-4">
                 <div className="banner__text">
                     <div className="banner__text__title">Hello, I'm Brandon!</div>
+                    <div className="banner__text__subtext">Full stack developer</div>
                 </div>
                 <div className="banner__image">
                     <img src={BannerImg} alt="" />

@@ -17,6 +17,8 @@ $primary: #1d1d1d; // 1c1d25
 
   // Logo
   &__logo-row {
+    display: flex;
+    align-items: center;
     padding: .75em;
 
     &__image {
@@ -26,10 +28,7 @@ $primary: #1d1d1d; // 1c1d25
     }
 
     &__name {
-      color: #ffffff;
-      font-size: 1.2rem;
-      display: inline-block;
-      font-weight: bold;
+      display: none;
     }
   }
 
@@ -59,14 +58,17 @@ $primary: #1d1d1d; // 1c1d25
 /** Banner **/
 .banner {
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #DFE0E2; // F5F5F5 //DFE0E2
   width: 100%;
   height: 30em;
 
-  &__text__title {
-    font-weight: bold;
-    font-size: 3rem;
+  &__text {
+    &__title,
+    &__subtext {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -95,12 +97,21 @@ $primary: #1d1d1d; // 1c1d25
 }
 
 
-/* @include media-breakpoint-down(xs) {  } */
-/* @include media-breakpoint-down(sm) {  } */
+/* @include media-breakpoint-up(xs) {  } */
+@include media-breakpoint-up(sm) { 
+} 
 
-@include media-breakpoint-down(md) { 
+@include media-breakpoint-up(md) { 
+  .header__logo-row__name {
+    display: inline-block;
+  }
+
   .banner {
-    flex-direction: column;
+    flex-direction: row;
+
+    &__text__title {
+      font-size: 3rem;
+    }
   }
 } 
-/* @include media-breakpoint-down(lg) {  } */
+/* @include media-breakpoint-up(lg) {  } */
