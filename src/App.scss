@@ -15,7 +15,8 @@ $primary: #1d1d1d; // 1c1d25
   padding: 0 2em;
   background-color: $primary;
 
-  &__logo__row {
+  // Logo
+  &__logo-row {
     padding: .75em;
 
     &__image {
@@ -31,24 +32,24 @@ $primary: #1d1d1d; // 1c1d25
       font-weight: bold;
     }
   }
-}
 
-/** Main menu **/
-.header__menu__row {
-  display: flex;
-  align-items: center;
-
-  ul.main-menu {
-    padding-right: 4em;
-
-    & > li {
-      display: inline-block;
-      list-style-type: none;
-      padding: 1em;
-      font-size: 1.2rem;;
-
-      & > a {
-        color: white;
+  // Menu
+  &__menu-row {
+    display: flex;
+    align-items: center;
+  
+    ul.main-menu {
+      padding-right: 4em;
+  
+      & > li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 1em;
+        font-size: 1.2rem;;
+  
+        & > a {
+          color: white;
+        }
       }
     }
   }

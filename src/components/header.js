@@ -5,11 +5,11 @@ class Header extends React.Component {
     render() {
         return (
             <div className="header d-flex justify-content-between flex-direction-row">
-                <div className="header__logo__row">
-                    <img src={logo} alt="logo" className="header__logo__row__image" />
-                    <div className="header__logo__row__name">Brandon Mok</div>
+                <div className="header__logo-row">
+                    <img src={logo} alt="logo" className="header__logo-row__image" />
+                    <div className="header__logo-row__name">Brandon Mok</div>
                 </div>
-                <div className="header__menu__row">
+                <div className="header__menu-row">
                     <ul className="main-menu">
                         <li><a href="#about" alt="About">About</a></li>
                         <li><a href="#projects" alt="About">Projects</a></li>
