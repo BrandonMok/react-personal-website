@@ -21,7 +21,7 @@ class Header extends React.Component {
                 </div>
                 <div className="header__menu-row">
                     <div id="mobile-nav">
-                        <a id="closebtn" onClick={this.closeNav}>&times;</a>
+                        <span id="closebtn" onClick={this.closeNav}>&times;</span>
                         <ul id="mobile-nav-items">
                             <li><a href="#about" onClick={this.closeNav}>About</a></li>
                             <li><a href="#projects" onClick={this.closeNav}>Projects</a></li>
