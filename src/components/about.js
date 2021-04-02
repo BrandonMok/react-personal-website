@@ -6,7 +6,7 @@ class About extends React.Component {
         return (
             <div className="about container" id="about">
                 <div className="row">
-                    <div className="col-12 col-md-8 p-4">
+                    <div className="col-12 col-lg-8 p-4">
                         <div className="about__title__content">
                             <div className="about__title__content__title">About</div>
                             <div className="about__title__content__line"></div>
@@ -20,7 +20,7 @@ class About extends React.Component {
                             it provided an opportunity to learn more about React.
                         </div>
                     </div>
-                    <div className="col-12 col-md-4 about__img__div p-4">
+                    <div className="col-12 col-lg-4 about__img__div p-4">
                         <img src={Profile} alt="Man in suit smiling" />
                     </div>
                 </div>

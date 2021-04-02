@@ -7,6 +7,7 @@ $primary: #1d1d1d; // 1c1d25
   font-family: 'Roboto', sans-serif;
 }
 
+
 /** Header **/
 .header {
   height: 6em;
@@ -167,6 +168,32 @@ $primary: #1d1d1d; // 1c1d25
   }
 }
 
+/** Primary Technologies **/
+.primary-tech {
+  background-color: #e9ecef;
+  padding: 4em 2em;
+
+  &__title-content {
+    &__title {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &__line {
+      margin-left: 1em;
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      content: "";
+      margin-bottom: .5em;
+      width: 5em;
+      height: 2px;
+      background-color: $primary;
+    }
+  }
+}
+
 
 /** Footer **/
 .footer {
@@ -192,6 +219,8 @@ $primary: #1d1d1d; // 1c1d25
 }
 
 
+
+/** Media queries **/
 @include media-breakpoint-up(md) { 
   .header {
     &__logo-row__name {
@@ -221,7 +250,10 @@ $primary: #1d1d1d; // 1c1d25
       }
     }
   }
+} 
 
+
+@include media-breakpoint-up(lg) { 
   .about {
     padding: 4em 0;
 
@@ -231,4 +263,4 @@ $primary: #1d1d1d; // 1c1d25
       align-items: center;
     }
   }
-} 
+}
