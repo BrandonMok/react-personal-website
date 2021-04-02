@@ -132,6 +132,34 @@ $primary: #1d1d1d; // 1c1d25
   }
 }
 
+.about {
+  padding: 2em 0;
+
+  &__text {
+    margin-top: 1em;
+  }
+
+  &__title__content {
+    &__title {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &__line {
+      margin-left: 1em;
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      content: "";
+      margin-bottom: .5em;
+      width: 5em;
+      height: 2px;
+      background-color: $primary;
+    }
+  }
+}
+
 
 /** Footer **/
 .footer {
