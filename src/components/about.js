@@ -1,4 +1,5 @@
 import React from 'react';
+import Profile from '../icons/profile.png';
 
 class About extends React.Component {
     render() {
@@ -19,7 +20,9 @@ class About extends React.Component {
                             it provided an opportunity to learn more about React.
                         </div>
                     </div>
-                    <div className="col-12 col-md-6"></div>
+                    <div className="col-12 col-md-6 about__img__div">
+                        <img src={Profile} alt="Man in suit smiling" />
+                    </div>
                 </div>
             </div>
         );

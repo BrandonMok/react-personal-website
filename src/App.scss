@@ -132,8 +132,11 @@ $primary: #1d1d1d; // 1c1d25
   }
 }
 
+
+/** About **/
 .about {
-  padding: 2em 0;
+  padding: 4em 0;
+  overflow: hidden;
 
   &__text {
     margin-top: 1em;
@@ -158,12 +161,16 @@ $primary: #1d1d1d; // 1c1d25
       background-color: $primary;
     }
   }
+
+  &__img__div {
+    display: none;
+  }
 }
 
 
 /** Footer **/
 .footer {
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -212,6 +219,14 @@ $primary: #1d1d1d; // 1c1d25
       &__title {
         font-size: 3rem;
       }
+    }
+  }
+
+  .about {
+    &__img__div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 } 
