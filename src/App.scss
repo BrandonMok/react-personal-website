@@ -107,11 +107,17 @@ $primary: #1d1d1d; // 1c1d25
   height: 30em;
 
   &__text {
-    &__title,
-    &__subtext {
+    margin-top: 1em;
+    
+    &__title {
+      font-size: 2rem;
       font-weight: bold;
+    }
+
+    &__subtext {
       font-size: 1.5rem;
     }
+
   }
 
   &__image {
@@ -172,8 +178,12 @@ $primary: #1d1d1d; // 1c1d25
   .banner {
     flex-direction: row;
 
-    &__text__title {
-      font-size: 3rem;
+    &__text {
+      margin: 0;
+
+      &__title {
+        font-size: 3rem;
+      }
     }
   }
 } 
