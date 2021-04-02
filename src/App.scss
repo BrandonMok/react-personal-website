@@ -135,7 +135,7 @@ $primary: #1d1d1d; // 1c1d25
 
 /** About **/
 .about {
-  padding: 4em 0;
+  padding: 4em 2em;
   overflow: hidden;
 
   &__text {
@@ -223,6 +223,8 @@ $primary: #1d1d1d; // 1c1d25
   }
 
   .about {
+    padding: 4em 0;
+
     &__img__div {
       display: flex;
       justify-content: center;
