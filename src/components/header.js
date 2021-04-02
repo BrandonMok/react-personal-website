@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 class Header extends React.Component {
     openNav() {
-        $("#mobile-nav").css("width", "70%");
+        $("#mobile-nav").css("width", "80%");
     }
     closeNav() {
         $("#mobile-nav").css("width", "0");
@@ -19,15 +19,8 @@ class Header extends React.Component {
                     <div className="header__logo-row__name">Brandon Mok</div>
                 </div>
                 <div className="header__menu-row">
-                    
                     <div id="mobile-nav">
                         <a id="closebtn" onClick={this.closeNav}>&times;</a>
-                        {/* <div id="mobile-nav__content">
-                            <ul id="mobile-nav-items">
-                                <li><a href="#about" onClick={this.closeNav}>About</a></li>
-                                <li><a href="#projects" onClick={this.closeNav}>Projects</a></li>
-                            </ul>
-                        </div> */}
                         <ul id="mobile-nav-items">
                             <li><a href="#about" onClick={this.closeNav}>About</a></li>
                             <li><a href="#projects" onClick={this.closeNav}>Projects</a></li>

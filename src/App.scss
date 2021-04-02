@@ -65,13 +65,14 @@ $primary: #1d1d1d; // 1c1d25
 
 #mobile-nav {
   position: fixed;
-  height: 100%;
   width: 0;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 1;
   transition: 1s;
   background-color: #f5f3f4;
+  overflow: hidden;
 }
 
 #closebtn {
@@ -95,6 +96,8 @@ $primary: #1d1d1d; // 1c1d25
     }
   }
 }
+
+
 
 /** Banner **/
 .banner {
@@ -150,7 +153,9 @@ $primary: #1d1d1d; // 1c1d25
     }
   }
 
-  #hamburger {
+  #hamburger,
+  #closebtn,
+  #mobile-nav {
     display: none;
   }
 
