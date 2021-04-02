@@ -5,6 +5,7 @@ import $ from 'jquery';
 class Header extends React.Component {
     openNav() {
         $("#mobile-nav").css("width", "80%");
+        $("#mobile-nav").css("z-index", "10");
     }
     closeNav() {
         $("#mobile-nav").css("width", "0");

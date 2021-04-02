@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class PrimaryTechnologies extends React.Component {
     render() {
         return (
@@ -15,7 +14,7 @@ class PrimaryTechnologies extends React.Component {
                     <div className="row">
                         <div className="d-flex primary-tech__boxes-container">
                             <div className="primary-tech__boxes-container__box">
-                                <i className="fab fa-bootstrap"></i>
+                                
                             </div>
                         </div>
                     </div>
