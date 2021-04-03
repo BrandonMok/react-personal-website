@@ -2,7 +2,7 @@ import React from 'react';
 import GithubLogo from '../icons/github.svg';
 import LinkedInLogo from '../icons/linkedin.svg';
 import DocIcon from '../icons/cv.svg';
-
+import Resume from '../documents/Resume.pdf';
 
 class MoreInfo extends React.Component {
     render() {
@@ -20,15 +20,23 @@ class MoreInfo extends React.Component {
                     <div className="row">
                         <div className="col-12">
                             <div className="d-flex flex-wrap justify-content-center align-items-center more-info__bottom-container">
-                                <div className="more-info__bottom-container__box">
-                                    <img src={GithubLogo} alt="Github Logo" /> 
-                                </div>
-                                <div className="more-info__bottom-container__box">
-                                    <img src={LinkedInLogo} alt="LinkedIn Logo" /> 
-                                </div>
-                                <div className="more-info__bottom-container__box">
-                                    <img src={DocIcon} alt="Document icon" /> 
-                                </div>
+                                <a href="https://github.com/brandonmok" target="_blank" alt="URL link to Brandon's GitHub">
+                                    <div className="more-info__bottom-container__box">
+                                            <img src={GithubLogo} alt="Github Logo" /> 
+                                    </div>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/brandonmok" target="_blank" alt="URL link to Brandon's LinkedIn">
+                                    <div className="more-info__bottom-container__box">
+                                        <img src={LinkedInLogo} alt="LinkedIn Logo" /> 
+                                    </div>
+                                </a>
+
+                                <a href={Resume} target="_blank" alt="URL link to Brandon's Resume">
+                                    <div className="more-info__bottom-container__box">
+                                        <img src={DocIcon} alt="Document icon" /> 
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
