@@ -9,6 +9,7 @@ class Header extends React.Component {
     }
     closeNav() {
         $("#mobile-nav").css("width", "0");
+        $("#mobile-nav").css("z-index", "0");
     }
 
     render() {
