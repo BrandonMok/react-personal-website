@@ -122,9 +122,10 @@ $primary: #1d1d1d; // 1c1d25
   }
 
   &__image {
+    overflow: hidden;
+
     img {
       position: relative;
-      overflow: hidden;
       left: 0; 
       top:0; 
       width: 100%; 
@@ -172,14 +173,16 @@ $primary: #1d1d1d; // 1c1d25
 /** Primary Technologies **/
 .primary-tech {
   background-color: #e9ecef;
-  padding: 4em 2em;
   overflow: hidden;
 
   &__top {
+    justify-content: center;
+
     &__title {
       display: inline-block;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
+      padding-top: .5em;
     }
 
     &__line {
@@ -187,8 +190,9 @@ $primary: #1d1d1d; // 1c1d25
       display: inline-block;
       position: relative;
       content: "";
+      top: 50%;
       margin-bottom: .5em;
-      width: 5em;
+      width: 3em;
       height: 2px;
       background-color: $primary;
     }
@@ -274,6 +278,37 @@ $primary: #1d1d1d; // 1c1d25
       }
     }
   }
+
+  /** MQ: Primary Tech **/
+  .primary-tech {
+    padding: 4em 2em;
+
+    &__top {
+      justify-content: start;
+
+      &__title {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+
+    &__boxes-container {
+      margin: 1.25em 0;
+  
+      &__box {
+        width: 300px;
+        height: 100px;
+      }
+    }
+  }
+
+  .primary-tech__top__line,
+  .about__title__content__line {
+    width: 5em;
+  }
+
+
 } 
 
 
