@@ -233,18 +233,12 @@ $primary: #1d1d1d; // 1c1d25
   padding: 2.5em 0;
   background-color: $primary;
   color: #ffffff;
-
-  &__icons {
-    &__github {
-      height: 2em;
-    }
-  }
 }
 
-.footer-icon {
-  max-width: 100%;
-  max-height: 100%;
-}
+// .footer-icon {
+//   max-width: 100%;
+//   max-height: 100%;
+// }
 
 
 
