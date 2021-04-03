@@ -7,7 +7,7 @@ import Resume from '../documents/Resume.pdf';
 class MoreInfo extends React.Component {
     render() {
         return (
-            <div className="more-info">
+            <div className="more-info" id="moreinfo">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -20,19 +20,19 @@ class MoreInfo extends React.Component {
                     <div className="row">
                         <div className="col-12">
                             <div className="d-flex flex-wrap justify-content-center align-items-center more-info__bottom-container">
-                                <a href="https://github.com/brandonmok" target="_blank" alt="URL link to Brandon's GitHub">
+                                <a href="https://github.com/brandonmok" target="_blank" rel="noreferrer" alt="URL link to Brandon's GitHub">
                                     <div className="more-info__bottom-container__box">
                                             <img src={GithubLogo} alt="Github Logo" /> 
                                     </div>
                                 </a>
 
-                                <a href="https://www.linkedin.com/in/brandonmok" target="_blank" alt="URL link to Brandon's LinkedIn">
+                                <a href="https://www.linkedin.com/in/brandonmok" target="_blank" rel="noreferrer" alt="URL link to Brandon's LinkedIn">
                                     <div className="more-info__bottom-container__box">
                                         <img src={LinkedInLogo} alt="LinkedIn Logo" /> 
                                     </div>
                                 </a>
 
-                                <a href={Resume} target="_blank" alt="URL link to Brandon's Resume">
+                                <a href={Resume} target="_blank" rel="noreferrer" alt="URL link to Brandon's Resume">
                                     <div className="more-info__bottom-container__box">
                                         <img src={DocIcon} alt="Document icon" /> 
                                     </div>

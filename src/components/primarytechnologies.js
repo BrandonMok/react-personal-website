@@ -10,7 +10,7 @@ import CSSLogo from '../icons/css3.svg';
 class PrimaryTechnologies extends React.Component {
     render() {
         return (
-            <div className="primary-tech">
+            <div className="primary-tech" id="tech">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

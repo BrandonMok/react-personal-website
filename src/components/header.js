@@ -13,7 +13,7 @@ class Header extends React.Component {
                 <div className="header__menu-row">
                     <ul className="main-menu">
                         <li><a href="#about" alt="About">About</a></li>
-                        <li><a href="#projects" alt="About">Projects</a></li>
+                        <li><a href="#moreinfo" alt="More Info">More</a></li>
                     </ul>
                 </div>
             </div>

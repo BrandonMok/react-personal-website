@@ -6,8 +6,8 @@ class Mobilenav extends React.Component {
             <div id="mobile-nav">
                 <span id="closebtn" onClick={this.props.onClick}>&times;</span>
                 <ul id="mobile-nav-items">
-                    <li><a href="#about" onClick={this.props.onClick}>About</a></li>
-                    <li><a href="#projects" onClick={this.props.onClick}>Projects</a></li>
+                    <li><a href="#about" alt="About" onClick={this.props.onClick}>About</a></li>
+                    <li><a href="#moreinfo" alt="More Info" onClick={this.props.onClick}>More</a></li>
                 </ul>
             </div>
         );
