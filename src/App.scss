@@ -20,7 +20,7 @@ $primary: #1d1d1d; // 1c1d25
   &__logo-row {
     display: flex;
     align-items: center;
-    padding: .75em;
+    // padding: .75em;
 
     &__image {
       max-width: 100%;
@@ -295,9 +295,15 @@ $primary: #1d1d1d; // 1c1d25
 /** Media queries **/
 @include media-breakpoint-up(md) { 
   .header {
-    &__logo-row__name {
-      display: inline-block;
+    &__logo-row {
+      padding: .75em;
+
+      &__name {
+        display: inline-block;
+      }
     }
+
+
     &__menu-row {
       ul.main-menu {
         display: block;
