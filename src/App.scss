@@ -223,6 +223,32 @@ $primary: #1d1d1d; // 1c1d25
 }
 
 
+/** More Info **/
+.more-info {
+  &__top {
+    &__title {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    
+    &__line {
+      margin-left: 1em;
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      content: "";
+      margin-bottom: .5em;
+      width: 5em;
+      height: 2px;
+      background-color: $primary;
+    }
+  }
+}
+
+
+
+
 /** Footer **/
 .footer {
   position: relative;
@@ -298,11 +324,15 @@ $primary: #1d1d1d; // 1c1d25
   }
 
   .primary-tech__top__line,
-  .about__title__content__line {
+  .about__title__content__line,
+  .more-info__top__line {
     width: 5em;
   }
 
 
+  .more-info {
+    padding: 4em 2em;
+  }
 } 
 
 

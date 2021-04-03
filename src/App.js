@@ -7,6 +7,7 @@ import About from './components/about';
 import PrimaryTech from './components/primarytechnologies';
 import Footer from './components/footer';
 import MobileNav from './components/mobilenav';
+import MoreInfo from './components/moreinfo';
 
 class App extends React.Component {
   openNav() {
@@ -24,6 +25,7 @@ class App extends React.Component {
         <Banner />
         <About />
         <PrimaryTech />
+        <MoreInfo />
         <Footer />
       </div>
     );
