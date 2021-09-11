@@ -6,11 +6,11 @@ import BannerImg from '../icons/undraw_traveling.svg';
         return (
             <div className="banner d-flex justify-content-around align-items-center p-4">
                 <div className="banner__text">
-                    <div className="banner__text__title">Hello, I'm Brandon!</div>
-                    <div className="banner__text__subtext">Full stack developer</div>
+                    <div className="banner__text__title">Hi, I'm Brandon!</div>
+                    <div className="banner__text__subtext">Full-stack developer</div>
                 </div>
                 <div className="banner__image">
-                    <img src={BannerImg} alt="" />
+                    <img src={BannerImg} alt="Picture of Brandon in a business suit." />
                 </div>
             </div>
          );

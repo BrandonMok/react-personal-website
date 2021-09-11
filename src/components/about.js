@@ -12,14 +12,14 @@ class About extends React.Component {
                             <div className="about__title__content__line"></div>
                         </div>
                         <div className="about__text">
-                            I'm a full stack software developer majoring in Web & Mobile Computing at RIT. 
-                            I have experience working in a wide variety of areas that include but are not limited to 
-                            full stack web development, CMS work mainly with Drupal, Laravel, object-orientated programming, databases, 
-                            and both android and ios mobile application development.
+                            I'm a full-stack software developer with a BS in Web & Mobile Computing (WMC).
+                            I have experience working in a variety of areas such as full-stack web development, 
+                            object orientated programming, databases, content management systems (Drupal & WordPress), Salesforce, and more.
+                            Additionally, I'm proficient in utilizing skills in HTML, CSS, JavaScript, PHP, SQL, Java, and C#.
                         </div>
                     </div>
                     <div className="col-12 col-lg-4 about__img__div p-4">
-                        <img src={Profile} alt="Man in suit smiling" />
+                        <img src={Profile} alt="Brandon in suit smiling" />
                     </div>
                 </div>
             </div>
