@@ -16,6 +16,7 @@ class About extends React.Component {
                             I have experience working in a variety of areas such as full-stack web development, 
                             object orientated programming, databases, content management systems (Drupal & WordPress), Salesforce, and more.
                             Additionally, I'm proficient in utilizing skills in HTML, CSS, JavaScript, PHP, SQL, Java, and C#.
+                            For more information, please feel free to checkout my GitHub, Linkedin, or Resume!
                         </div>
                     </div>
                     <div className="col-12 col-lg-4 about__img__div p-4">
