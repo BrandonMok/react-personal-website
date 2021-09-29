@@ -32,11 +32,11 @@ class MoreInfo extends React.Component {
                                     </div>
                                 </a>
 
-                                <a href={Resume} target="_blank" rel="noreferrer" alt="URL link to Brandon's Resume">
+                                {/* <a href={Resume} target="_blank" rel="noreferrer" alt="URL link to Brandon's Resume">
                                     <div className="more-info__bottom-container__box">
                                         <img src={DocIcon} alt="Document icon" /> 
                                     </div>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>
