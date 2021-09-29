@@ -2,7 +2,6 @@ import React from 'react';
 import GithubLogo from '../icons/github.svg';
 import LinkedInLogo from '../icons/linkedin.svg';
 import DocIcon from '../icons/cv.svg';
-import Resume from '../documents/Resume.pdf';
 
 class MoreInfo extends React.Component {
     render() {
@@ -31,12 +30,6 @@ class MoreInfo extends React.Component {
                                         <img src={LinkedInLogo} alt="LinkedIn Logo" /> 
                                     </div>
                                 </a>
-
-                                {/* <a href={Resume} target="_blank" rel="noreferrer" alt="URL link to Brandon's Resume">
-                                    <div className="more-info__bottom-container__box">
-                                        <img src={DocIcon} alt="Document icon" /> 
-                                    </div>
-                                </a> */}
                             </div>
                         </div>
                     </div>
