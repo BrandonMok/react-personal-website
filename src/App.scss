@@ -1,14 +1,13 @@
 @import '~bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-$primary: #1d1d1d; // 1c1d25
+$primary: #1d1d1d; //#343434
 
 * {
   font-family: 'Roboto', sans-serif;
 }
 
 
-/** Header **/
 .header {
   height: 6.5em;
   width: 100%;
@@ -21,7 +20,6 @@ $primary: #1d1d1d; // 1c1d25
     &__image {
       max-width: 100%;
       max-height: 100%;
-      // display: inline-block;
     }
 
     &__name {
@@ -54,8 +52,6 @@ $primary: #1d1d1d; // 1c1d25
   }
 }
 
-
-// Hamburger icon
 #hamburger {
   color: #ffffff;
   font-size: 1.5rem;
@@ -95,38 +91,37 @@ $primary: #1d1d1d; // 1c1d25
   }
 }
 
-
-/** Banner **/
 .banner {
-  justify-content: center;
-  flex-direction: column;
-  background-color: #DFE0E2; // F5F5F5 //DFE0E2
+  background-color: #DFE0E2;
   width: 100%;
   height: 30em;
+  overflow: hidden;
 
-  &__text {
-    margin-top: 1em;
-    
-    &__title {
-      font-size: 2rem;
-      font-weight: bold;
+  &__flexbox {
+    justify-content: space-between;
+    flex-direction: column;
+
+    &__text {
+      margin-top: 1em;
+      
+      &__title {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      &__subtext {
+        font-size: 1.5rem;
+      }
     }
 
-    &__subtext {
-      font-size: 1.5rem;
-    }
-
-  }
-
-  &__image {
-    overflow: hidden;
-
-    img {
-      position: relative;
-      left: 0; 
-      top:0; 
-      width: 100%; 
-      height: 100%;
+    &__image {
+      img {
+        position: relative;
+        left: 0; 
+        top:0; 
+        width: 100%; 
+        height: 100%;
+      }
     }
   }
 }
@@ -326,7 +321,7 @@ $primary: #1d1d1d; // 1c1d25
     display: none;
   }
 
-  .banner {
+  .banner__flexbox {
     flex-direction: row;
 
     &__text {

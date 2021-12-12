@@ -24,7 +24,6 @@ class MoreInfo extends React.Component {
                                             <img src={GithubLogo} alt="Github Logo" /> 
                                     </div>
                                 </a>
-
                                 <a href="https://www.linkedin.com/in/brandonmok" target="_blank" rel="noreferrer" alt="URL link to Brandon's LinkedIn">
                                     <div className="more-info__bottom-container__box">
                                         <img src={LinkedInLogo} alt="LinkedIn Logo" /> 

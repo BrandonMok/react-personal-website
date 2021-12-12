@@ -12,9 +12,9 @@ class About extends React.Component {
                             <div className="about__title__content__line"></div>
                         </div>
                         <div className="about__text">
-                            I'm a full-stack software developer with a BS in Web & Mobile Computing (WMC).
+                            I'm a full-stack software developer with a BS degree in Web & Mobile Computing (WMC).
                             I have experience working in a variety of areas such as full-stack web development, 
-                            object orientated programming, databases, content management systems (Drupal & WordPress), Salesforce, and more.
+                            object orientated programming, databases, content management systems (Drupal & WordPress), Salesforce (CRM & CMS), and more.
                             Additionally, I'm proficient in utilizing skills in HTML, CSS, JavaScript, PHP, SQL, Java, and C#.
                             For more information, please feel free to checkout my GitHub and LinkedIn!
                         </div>
