@@ -1,30 +1,28 @@
 import React from 'react';
 import Profile from '../icons/profile.png';
+import SectionTitle from './sectionTitle';
 
-class About extends React.Component {
-    render() {
-        return (
-            <div className="about container" id="about">
-                <div className="row">
-                    <div className="col-12 col-lg-8 p-4">
-                        <div className="about__title__content">
-                            <div className="about__title__content__title">About</div>
-                            <div className="about__title__content__line"></div>
-                        </div>
-                        <div className="about__text">
-                            I'm a full-stack software developer with a BS degree in Web & Mobile Computing (WMC).
-                            I have experience working in a variety of areas such as full-stack web development, 
-                            object orientated programming, databases, content management systems (Drupal & WordPress), Salesforce (CRM & CMS), and more.
-                            Additionally, I'm proficient in utilizing skills in HTML, CSS, JavaScript, PHP, SQL, Java, and C#.
-                            For more information, please feel free to checkout my GitHub and LinkedIn!
-                        </div>
+const About = () => {
+    return (
+        <div className='aboutme' id='aboutme'>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-12 col-md-6 aboutme__image-col'>
+                        <img src={Profile} alt="Man in a suit" />
                     </div>
-                    <div className="col-12 col-lg-4 about__img__div p-4">
-                        <img src={Profile} alt="Brandon in suit smiling" />
+                    <div className='col-12 col-md-6 aboutme__content-col'>
+                        <SectionTitle title="About Me" />
+                        <div className='aboutme__content-col__content'>
+                            I'm a full-stack developer that loves to learn and expand my knowledge. 
+                            I have experience working in a variety of areas such as full-stack web development,
+                            object-oriented programming, databases, content management systems (Drupal and Wordpress), 
+                            frameworks (Laravel and some React), and Salesforce (CRM, Experience Cloud, and Service Cloud).
+                        </div>
                     </div>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
+
 export default About;

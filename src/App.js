@@ -1,34 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.scss';
 import $ from 'jquery';
 import Header from './components/header';
 import Banner from './components/banner';
 import About from './components/about';
-import PrimaryTech from './components/primarytechnologies';
+import Skills from './components/skills';
 import Footer from './components/footer';
-import MobileNav from './components/mobilenav';
 import MoreInfo from './components/moreinfo';
 
 class App extends React.Component {
-  openNav() {
-    $("#mobile-nav").css("width", "60%");
+  updateMobileNavState() {
+    this.setState({
+      openMobileNav: !this.state.openMobileNav
+    });
+
+    if (this.state.openMobileNav) {
+      $("#mobile-nav").css("width", "45%");
+    }
+    else {
+      $("#mobile-nav").css("width", "0");
+    }
   }
-  closeNav() {
-    $("#mobile-nav").css("width", "0");
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      openMobileNav: false
+    }
   }
 
   render() {
     return (
       <div className="App">
-        <MobileNav onClick={() => this.closeNav()} />
-        <Header onClick={() => this.openNav()} />
+        <Header onClick={() => this.updateMobileNavState()} />
         <Banner />
         <About />
-        <PrimaryTech />
+        <Skills />
         <MoreInfo />
         <Footer />
       </div>
     );
   }
 }
+
 export default App;

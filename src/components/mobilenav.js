@@ -1,16 +1,20 @@
 import React from 'react';
+import $ from 'jquery';
 
-class Mobilenav extends React.Component {
-    render() {
-        return (
-            <div id="mobile-nav">
-                <span id="closebtn" onClick={this.props.onClick}>&times;</span>
-                <ul id="mobile-nav-items">
-                    <li><a href="#about" alt="About" onClick={this.props.onClick}>About</a></li>
-                    <li><a href="#moreinfo" alt="More Info" onClick={this.props.onClick}>More</a></li>
-                </ul>
-            </div>
-        );
+const Mobilenav = () => {
+    
+    const updateMobileNav = () => {
+        $("#mobile-nav").css("width", "0");
     }
+
+    return (
+        <div id="mobile-nav">
+            <ul id="mobile-nav-items">
+                <li><a href="#aboutme" alt="About" onClick={() => updateMobileNav()}>About</a></li>
+                <li><a href="#skills" alt="Skills" onClick={() => updateMobileNav()}>Skills</a></li>
+                <li><a href="#moreinfo" alt="More Info" onClick={() => updateMobileNav()}>More</a></li>
+            </ul>
+        </div>
+    );
 }
 export default Mobilenav;
