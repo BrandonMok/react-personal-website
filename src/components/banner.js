@@ -29,23 +29,6 @@ const Banner = () => {
                 </div>                
             </div>
         </div>
-
-        // <div className='home-banner'>
-        //     <div className='container home-banner__container'>
-        //         <div className='home-banner__container__heading-info'>
-        //             <div className='home-banner__container__heading-info__name'>
-        //                 Brandon Mok
-        //             </div>
-        //             <div className='home-banner__container__heading-info__title'>
-        //                 Fullstack Developer
-        //             </div>
-        //         </div>
-        //     </div>
-        //     <div className='home-banner__shapes'>
-        //         <div className='home-banner__shapes__blTriangle'></div>
-        //         {/* <div className='home-banner__shapes__trTriangle'></div> */}
-        //     </div>
-        // </div>
     );
 }
 

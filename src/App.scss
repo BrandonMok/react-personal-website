@@ -1,8 +1,5 @@
 @import '~bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 
 /** Variables **/
 $primary: #fafafa;
@@ -15,21 +12,16 @@ $font-medium: 1.5rem;
 $font-small: 1.2rem;
 $font-regular: 1rem;
 
-$intro-heading-medium: 2.5rem;
-
 $heading-large: 3rem;
 $heading-medium: 2.5rem;
 $heading-normal: 2rem;
 $heading-small: 1.5rem;
-$heading-extra-small: 1rem;
+
 
 * {
     font-family: 'Poppins', sans-serif;
 }
 
-// body {
-//   background-color: $primary;
-// }
 
 /** SectionTitle - reusuable component to display section title and accent line **/
 .section-title {
@@ -52,21 +44,19 @@ $heading-extra-small: 1rem;
   }
 }
 
-
 /** HEADER **/
 .header {
   @extend .container;
-  padding: 1.5rem 0;
-  
-  // Logo
-  &__logo-row {
-    @extend .container;
 
-    &__name {
-      display: inline-block;
-      font-family: 'Pacifico', cursive;
-      font-size: $font-medium;
-      font-weight: bold;
+  &__logo-row {
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+
+    img {
+      width: 100%;
+      height: 100%; 
+      object-fit: contain;
     }
   }
 
@@ -137,10 +127,7 @@ $heading-extra-small: 1rem;
 /** BANNER **/
 .banner {
   min-height: 25vh;
-  // background-image: linear-gradient(to right, #ECE9E6, #FFFFFF);
-  // background-color: #edf2f4;
-  background-image: url('./assets/purplebackground.jpeg');
-  background-position: center center;
+  background-image: linear-gradient(to right, #ECE9E6, #FFFFFF);
 
   &__flexbox {
       display: flex;
@@ -157,7 +144,7 @@ $heading-extra-small: 1rem;
               }
 
               &__subheadline {
-                  font-size: $heading-extra-small;
+                  font-size: $font-regular;
               }
           }
       }
@@ -250,7 +237,6 @@ $heading-extra-small: 1rem;
 
 /** Media queries **/
 @include media-breakpoint-up(xs) { 
-  .header__logo-row__name,
   .section-title__title {
     font-size: $font-medium;
   }
@@ -289,10 +275,6 @@ $heading-extra-small: 1rem;
   .header {
     &__logo-row {
       display: inline;
-
-      &__name {
-        font-size: $font-large;
-      }
     }
     &__menu-row {
       .main-menu {
