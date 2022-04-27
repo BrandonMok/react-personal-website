@@ -15,10 +15,13 @@ const About = () => {
                     <div className='col-12 col-md-6 aboutme__content-col'>
                         <SectionTitle title="About Me" />
                         <div className='aboutme__content-col__content'>
-                            I'm a full-stack developer that loves to learn and expand my knowledge. 
-                            I have experience working in a variety of areas such as full-stack web development,
-                            object-oriented programming, databases, content management systems (Drupal and Wordpress), 
-                            frameworks (Laravel and some React), and Salesforce (CRM, Experience Cloud, and Service Cloud).
+                            I'm a full-stack developer that's eager to learn and search for the next problem.
+                            I've explored and have experienced working in a variety of different areas
+                            such as web development, object-oriented programming, databases,
+                            content management systems (Drupal and WordPress), frameworks (Laravel and some React),
+                            and Salesforce (CRM, Experience Cloud, and Service Cloud).
+                            While this list continues to grow, I've enjoyed taking on new problems, learning new technologies, 
+                            and exploring undiscovered areas.
                         </div>
                     </div>
                 </div>

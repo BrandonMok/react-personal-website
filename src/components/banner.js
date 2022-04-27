@@ -10,7 +10,7 @@ const Banner = () => {
                     <div className='banner__flexbox__box1__headline-content'>
                         <div className='banner__flexbox__box1__headline-content__subheadline'>Hello, I'm</div>
                         <div className='banner__flexbox__box1__headline-content__headline'>Brandon Mok</div>
-                        <div className='banner__flexbox__box1__headline-content__subheadline'>Fullstack Developer</div>
+                        <div className='banner__flexbox__box1__headline-content__subheadline'>Full-stack Developer</div>
                     </div>        
                 </div>        
                 <div className='banner__flexbox__box2'>
