@@ -1,5 +1,6 @@
 import React from 'react';
-import Avatar from 'avataaars'
+import AvatarPic from '../icons/avatar.svg'
+
 
 const Banner = () => {
     return (
@@ -13,19 +14,7 @@ const Banner = () => {
                     </div>        
                 </div>        
                 <div className='banner__flexbox__box2'>
-                    <Avatar
-                        avatarStyle='Circle'
-                        topType='ShortHairTheCaesar'
-                        accessoriesType='Prescription02'
-                        hairColor='Black'
-                        facialHairType='Blank'
-                        clotheType='ShirtCrewNeck'
-                        clotheColor='Heather'
-                        eyeType='Happy'
-                        eyebrowType='Default'
-                        mouthType='Smile'
-                        skinColor='Light'
-                    />
+                    <img src={AvatarPic} alt='avatar' />
                 </div>                
             </div>
         </div>

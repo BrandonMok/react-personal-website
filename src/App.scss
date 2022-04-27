@@ -127,7 +127,7 @@ $heading-small: 1.5rem;
 /** BANNER **/
 .banner {
   min-height: 25vh;
-  background-image: linear-gradient(to right, #ECE9E6, #FFFFFF);
+  background-color: #ECE9E6;
 
   &__flexbox {
       display: flex;
@@ -290,9 +290,21 @@ $heading-small: 1.5rem;
     display: none;
   }
 
+
   .aboutme {
     &__image-col {
       display: block;
+
+      &__image-container {
+         img {
+          width:100%;
+          height:auto;
+          max-width:500px;
+          margin-left:auto;
+          margin-right:auto;
+          display:block;
+         }
+      }
     }
   }
 

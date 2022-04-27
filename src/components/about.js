@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from '../icons/profile.png';
+import SpaceImg from '../icons/undraw_outer_space.svg';
 import SectionTitle from './sectionTitle';
 
 const About = () => {
@@ -8,7 +8,9 @@ const About = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-12 col-md-6 aboutme__image-col'>
-                        <img src={Profile} alt="Man in a suit" />
+                        <div className='aboutme__image-col__image-container'>
+                            <img src={SpaceImg} alt="Man in a suit" />
+                        </div>
                     </div>
                     <div className='col-12 col-md-6 aboutme__content-col'>
                         <SectionTitle title="About Me" />
