@@ -14,38 +14,38 @@ const Skills = () => {
                             <div className='row skills__content-col__content__FEBE-row'>
                                 <div className='col-12 col-md-6'>
                                     <div className='skills__content-col__content__FEBE-row__FE'>
-                                        <div className=''>Frontend</div>
+                                        <div className='skills__area-title'>Frontend</div>
                                         <ul>
                                             <li>HTML</li>
                                             <li>CSS / SASS</li>
                                             <li>Javascript</li>
                                             <li>Bootstrap</li>
-                                            <li>JQuery</li>
+                                            <li>React **</li>
                                         </ul>
                                     </div>
                                 </div>
 
                                 <div className='col-12 col-md-6'>
                                     <div className='skills__content-col__content__FEBE-row__BE'>
-                                        <div>Backend</div>
+                                        <div className='skills__area-title'>Backend</div>
                                         <ul>
                                             <li>PHP</li>
                                             <li>SQL</li>
                                             <li>Lando (Docker)</li>
+                                            <li>Laravel</li>
+                                            <li>Drupal</li>
+                                            <li>WordPress</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div className='row skills__content-col__content__other-row'>
                                 <div className='col-12'>
-                                    <div>Other</div>
+                                    <div className='skills__area-title'>Other</div>
                                     <ul>
                                         <li>Salesforce</li>
-                                        <li>Laravel</li>
-                                        <li>Drupal</li>
-                                        <li>WordPress</li>
-                                        <li>React</li>
                                     </ul>
+                                    <p className='skills__disclaimer'>** some experience and/or knowledge</p>
                                 </div>
                             </div>
                         </div>

@@ -2,8 +2,7 @@ import React from 'react';
 import MobileNav from './mobilenav';
 import Logo from '../icons/logo.png';
 
-class Header extends React.Component {
-    render() {
+const Header = ({onClick}) => {
         return (
             <div className="header d-flex justify-content-between flex-direction-row">
                 <div className="header__logo-row">
@@ -16,11 +15,10 @@ class Header extends React.Component {
                         <li><a href="#moreinfo" alt="More Info">More</a></li>
                     </ul>
 
-                    <span id="hamburger" onClick={this.props.onClick}>&#9776;</span>
+                    <span id="hamburger" onClick={onClick}>&#9776;</span>
                     <MobileNav />
                 </div>
             </div>
         );
-    }
 }
 export default Header;

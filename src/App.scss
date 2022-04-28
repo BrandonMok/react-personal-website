@@ -10,7 +10,7 @@ $black: #000000;
 
 $font-large: 2rem;
 $font-medium: 1.5rem;
-$font-small: 1.2rem;
+$font-regular-plus: 1.2rem;
 $font-regular: 1rem;
 
 $heading-large: 3rem;
@@ -39,6 +39,7 @@ $heading-small: 1.5rem;
     height: 2px;
     margin-bottom: .5em;
     margin-left: 1em;
+    margin-right: 1em;
     position: relative;
     top: 50%;
     width: 5em;
@@ -76,7 +77,7 @@ $heading-small: 1.5rem;
   
         & > a {
           color: $black;
-          font-size: $font-small;
+          font-size: $font-regular-plus;
           font-weight: bold;
         }
       }
@@ -118,7 +119,7 @@ $heading-small: 1.5rem;
     
     a {
       color: $black;
-      font-size: $font-small;
+      font-size: $font-regular-plus;
       font-weight: bold;
     }
   }
@@ -172,17 +173,26 @@ $heading-small: 1.5rem;
   background-color: $secondary;
   padding: 4rem 0;
 
+  &__area-title {
+    font-size: $font-medium;
+  }
+
+  &__disclaimer {
+    opacity: .5;
+  }
+
   &__image-col {
     display: none;
   }
 
   &__content-col__content {
-    &__FEBE-row {
-      // background-color: orange;
-    }
-
+    &__FEBE-row,
     &__other-row {
-      // background-color: blue;
+      ul {
+        & > li {
+          list-style-image: url('./icons/cube.svg');
+        }
+      }
     }
   }
 }
@@ -191,10 +201,6 @@ $heading-small: 1.5rem;
 /** More Info **/
 .more-info {
   padding: 2rem 0;
-
-  // &__title-row {
-  //   text-align: center;
-  // }
 
   &__icon-row {
     padding: 1rem;
