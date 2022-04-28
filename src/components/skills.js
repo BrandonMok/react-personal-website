@@ -1,42 +1,63 @@
 import React from 'react';
 import SectionTitle from './sectionTitle';
+import PercentageImg from '../icons/undraw_percentage.svg';
 
-class Skills extends React.Component {
-    render() {
-        return (
-            <div className="skills" id="skills">
-                <div className="skills__container container">
-                    <div className='row skills__container__title-row'>
-                        <div className='col-12'>
-                            <SectionTitle title="Skills" />     
+const Skills = () => {
+    return (
+        <div className="skills" id="skills">
+            <div className="container">
+                <div className='row'>
+                    <div className='col-12 col-md-6 skills__content-col'>
+                        <SectionTitle title="Skills" />  
+
+                        <div className='skills__content-col__content container'>
+                            <div className='row skills__content-col__content__FEBE-row'>
+                                <div className='col-12 col-md-6'>
+                                    <div className='skills__content-col__content__FEBE-row__FE'>
+                                        <div className=''>Frontend</div>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS / SASS</li>
+                                            <li>Javascript</li>
+                                            <li>Bootstrap</li>
+                                            <li>JQuery</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className='col-12 col-md-6'>
+                                    <div className='skills__content-col__content__FEBE-row__BE'>
+                                        <div>Backend</div>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>SQL</li>
+                                            <li>Lando (Docker)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='row skills__content-col__content__other-row'>
+                                <div className='col-12'>
+                                    <div>Other</div>
+                                    <ul>
+                                        <li>Salesforce</li>
+                                        <li>Laravel</li>
+                                        <li>Drupal</li>
+                                        <li>WordPress</li>
+                                        <li>React</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className='row skills__container__items-row'>
-                        <div className="col col-12 col-md-4">
-                            <div className="skills__container__items-row__item">HTML</div>
-                            <div className="skills__container__items-row__item">CSS/SCSS</div>
-                            <div className="skills__container__items-row__item">Javascript</div>
-                            <div className="skills__container__items-row__item">PHP</div>
-                            <div className="skills__container__items-row__item">SQL</div>
-                        </div>
-                        <div className="col col-12 col-md-4">
-                            <div className="skills__container__items-row__item">Salesforce</div>
-                            <div className="skills__container__items-row__item">Apex</div>
-                            <div className="skills__container__items-row__item">SOQL</div>
-                            <div className="skills__container__items-row__item">Aura & LWC</div>
-                            <div className="skills__container__items-row__item">SOQL</div>
-                        </div>
-                        <div className="col col-12 col-md-4">
-                            <div className="skills__container__items-row__item">Drupal</div>
-                            <div className="skills__container__items-row__item">Laravel</div>
-                            <div className="skills__container__items-row__item">React</div>
-                            <div className="skills__container__items-row__item">Java</div>
-                            <div className="skills__container__items-row__item">C#</div>
+                    <div className='col-12 col-md-6 skills__image-col'>
+                        <div className='skills__image-col__image-container'>
+                            <img src={PercentageImg} alt="Man next to horizontal progress bars" />
                         </div>
                     </div>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
 export default Skills;

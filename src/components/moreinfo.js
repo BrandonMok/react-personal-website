@@ -7,7 +7,7 @@ const MoreInfo = () => {
     return (
         <div className="more-info" id="moreinfo">
             <div className="container">
-                <div className="row">
+                <div className="row more-info__title-row">
                     <div className="col-12">
                         <SectionTitle title="More Info" />
                     </div>

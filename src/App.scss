@@ -3,7 +3,8 @@
 
 /** Variables **/
 $primary: #fafafa;
-$secondary: #e9ecef;
+$secondary: #ECE9E6;
+$tertiary: #d7d7d7;
 $white: #ffffff;
 $black: #000000;
 
@@ -127,7 +128,7 @@ $heading-small: 1.5rem;
 /** BANNER **/
 .banner {
   min-height: 25vh;
-  background-color: #ECE9E6;
+  background-color: $secondary;
 
   &__flexbox {
       display: flex;
@@ -159,36 +160,29 @@ $heading-small: 1.5rem;
 /** ABOUT **/
 .aboutme {
   padding: 4rem 0;
-  overflow: hidden;
-  @extend .container;
 
   &__image-col {
     display: none;
-  }
-
-  &__content-col {
-    display: block;
   }
 }
 
 
 /** Skills **/
 .skills {
-  background: $secondary;
-  padding: 2rem 0;
+  background-color: $secondary;
+  padding: 4rem 0;
 
-  &__container {
-    &__items-row {
-      text-align: center;
-      padding: 1em;
+  &__image-col {
+    display: none;
+  }
 
-      &__item {
-        border: 2px solid #343434;
-        background-color: $primary;
-        font-size: $font-small;
-        padding: 1rem;
-        margin: 1rem 0;
-      }
+  &__content-col__content {
+    &__FEBE-row {
+      // background-color: orange;
+    }
+
+    &__other-row {
+      // background-color: blue;
     }
   }
 }
@@ -197,6 +191,10 @@ $heading-small: 1.5rem;
 /** More Info **/
 .more-info {
   padding: 2rem 0;
+
+  // &__title-row {
+  //   text-align: center;
+  // }
 
   &__icon-row {
     padding: 1rem;
@@ -224,14 +222,14 @@ $heading-small: 1.5rem;
 
 /** Footer **/
 .footer {
+  background-color: $tertiary;
+  color: $black;
+  font-weight: 600;
   position: relative;
   left: 0;
   bottom: 0;
   height: 5em;
   padding: 2.5em 0;
-  background-color: #ced4da;
-  color: $black;
-  font-weight: bold;
 }
 
 
@@ -299,11 +297,29 @@ $heading-small: 1.5rem;
         padding: 2rem;
 
         img {
-        display:block;
-        width: 100%;
-        height:auto;
-        max-width:500px;
-        margin: 0 auto;
+          display:block;
+          width: 100%;
+          height:auto;
+          max-width:500px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .skills {
+    &__image-col {
+      display: block;
+
+      &__image-container {
+        padding: 2rem;
+
+        img {
+          display:block;
+          width: 100%;
+          height:auto;
+          max-width:500px;
+          margin: 0 auto;
         }
       }
     }

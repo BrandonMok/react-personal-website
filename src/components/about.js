@@ -9,7 +9,7 @@ const About = () => {
                 <div className='row'>
                     <div className='col-12 col-md-6 aboutme__image-col'>
                         <div className='aboutme__image-col__image-container'>
-                            <img src={SpaceImg} alt="Man in a suit" />
+                            <img src={SpaceImg} alt="Rocket ship in space" />
                         </div>
                     </div>
                     <div className='col-12 col-md-6 aboutme__content-col'>
