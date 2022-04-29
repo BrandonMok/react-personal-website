@@ -5,7 +5,7 @@
   top: 0;
   right: 1rem;
 }
-  
+
 #mobile-nav {
   background-color: $white;
   position: absolute;
@@ -19,9 +19,9 @@
 
   -webkit-box-shadow: 0 8px 10px -10px $black;
   -moz-box-shadow: 0 8px 10px -10px $black;
-          box-shadow: 0 8px 10px -10px $black;
+  box-shadow: 0 8px 10px -10px $black;
 }
-  
+
 #mobile-nav-items {
   margin-top: 1em;
   list-style: none;
@@ -29,7 +29,7 @@
   li {
     padding: 1em 0;
     list-style: none;
-    
+
     a {
       color: $black;
       font-size: $font-regular-plus;
@@ -38,12 +38,9 @@
   }
 }
 
-
-
-@include media-breakpoint-up(md) { 
-    #hamburger,
-    #mobile-nav {
-      display: none;
-    }
-  
+@include media-breakpoint-up(md) {
+  #hamburger,
+  #mobile-nav {
+    display: none;
+  }
 }
