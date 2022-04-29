@@ -1,41 +1,41 @@
 #hamburger {
-    color: $black;
-    font-size: $font-medium;
-    position: relative;
-    top: 0;
-    right: 1rem;
+  color: $black;
+  font-size: $font-medium;
+  position: relative;
+  top: 0;
+  right: 1rem;
 }
   
 #mobile-nav {
-    background-color: $white;
-    position: absolute;
-    height: 14rem;
-    top: 3.5rem;
-    right: 1rem;
-    width: 0;
-    z-index: 10;
-    overflow: hidden;
-    border-radius: 2rem;
+  background-color: $white;
+  position: absolute;
+  height: 14rem;
+  top: 3.5rem;
+  right: 1rem;
+  width: 0;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 2rem;
 
-    -webkit-box-shadow: 0 8px 10px -10px $black;
-    -moz-box-shadow: 0 8px 10px -10px $black;
-            box-shadow: 0 8px 10px -10px $black;
-  }
+  -webkit-box-shadow: 0 8px 10px -10px $black;
+  -moz-box-shadow: 0 8px 10px -10px $black;
+          box-shadow: 0 8px 10px -10px $black;
+}
   
 #mobile-nav-items {
-    margin-top: 1em;
+  margin-top: 1em;
+  list-style: none;
+
+  li {
+    padding: 1em 0;
     list-style: none;
-  
-    li {
-      padding: 1em 0;
-      list-style: none;
-      
-      a {
-        color: $black;
-        font-size: $font-regular-plus;
-        font-weight: bold;
-      }
+    
+    a {
+      color: $black;
+      font-size: $font-regular-plus;
+      font-weight: bold;
     }
+  }
 }
 
 
