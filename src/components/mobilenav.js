@@ -1,17 +1,11 @@
 import React from 'react';
-import $ from 'jquery';
 
-const Mobilenav = () => {
-    
-    const updateMobileNav = () => {
-        $("#mobile-nav").css("width", "0");
-    }
-
+const Mobilenav = ({onClick}) => {
     return (
         <div id="mobile-nav">
             <ul id="mobile-nav-items">
-                <li><a href="#aboutme" alt="About" onClick={() => updateMobileNav()}>About</a></li>
-                <li><a href="#skills" alt="Skills" onClick={() => updateMobileNav()}>Skills</a></li>
+                <li><a href="#aboutme" alt="About" onClick={() => onClick(prev => !prev)}>About</a></li>
+                <li><a href="#skills" alt="Skills" onClick={() => onClick(prev => !prev)}>Skills</a></li>
             </ul>
         </div>
     );

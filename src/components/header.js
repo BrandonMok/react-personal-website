@@ -14,8 +14,8 @@ const Header = ({onClick}) => {
                         <li><a href="#skills" alt="Skills">Skills</a></li>
                     </ul>
 
-                    <span id="hamburger" onClick={onClick}>&#9776;</span>
-                    <MobileNav />
+                    <span id="hamburger" onClick={() => onClick(prev => !prev)}>&#9776;</span>
+                    <MobileNav onClick={onClick} />
                 </div>
             </div>
         );
