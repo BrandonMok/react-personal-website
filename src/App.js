@@ -6,7 +6,7 @@ import Banner from './components/banner';
 import About from './components/about';
 import Skills from './components/skills';
 import Footer from './components/footer';
-import MoreInfo from './components/moreinfo';
+// import MoreInfo from './components/moreinfo';
 
 class App extends React.Component {
   updateMobileNavState() {
@@ -36,7 +36,6 @@ class App extends React.Component {
         <Banner />
         <About />
         <Skills />
-        <MoreInfo />
         <Footer />
       </div>
     );

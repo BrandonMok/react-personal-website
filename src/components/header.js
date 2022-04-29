@@ -12,7 +12,6 @@ const Header = ({onClick}) => {
                     <ul className="main-menu">
                         <li><a href="#aboutme" alt="About">About</a></li>
                         <li><a href="#skills" alt="Skills">Skills</a></li>
-                        <li><a href="#moreinfo" alt="More Info">More</a></li>
                     </ul>
 
                     <span id="hamburger" onClick={onClick}>&#9776;</span>
