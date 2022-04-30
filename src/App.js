@@ -1,6 +1,5 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import './App.scss';
-import $ from 'jquery';
 import Header from './components/header';
 import Banner from './components/banner';
 import About from './components/about';
@@ -10,7 +9,6 @@ import anime from 'animejs/lib/anime.es.js';
 
 
 function App() {
-  const [ openMobileNav, setOpenMobileNav ] = useState(false);
 
   // anime({
   //   targets: '.App',
@@ -19,15 +17,10 @@ function App() {
   //   opacity: [0, 1],
   //   delay: (el, i) => 700 + 300 * i
   // })
-  
-  useEffect(() => {
-    let percentWidth = openMobileNav ? "45%" : "0";
-    $("#mobile-nav").css("width", percentWidth);
-  },[openMobileNav]);
 
   return (
     <div className="App">
-      <Header onClick={setOpenMobileNav} />
+      <Header />
       <Banner />
       <About />
       <Skills />
