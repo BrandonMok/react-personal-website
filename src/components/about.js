@@ -1,30 +1,32 @@
 import React from 'react';
-import Profile from '../icons/profile.png';
+import SpaceImg from '../icons/undraw_outer_space.svg';
+import SectionTitle from './sectionTitle';
 
-class About extends React.Component {
-    render() {
-        return (
-            <div className="about container" id="about">
-                <div className="row">
-                    <div className="col-12 col-lg-8 p-4">
-                        <div className="about__title__content">
-                            <div className="about__title__content__title">About</div>
-                            <div className="about__title__content__line"></div>
-                        </div>
-                        <div className="about__text">
-                            I'm a full-stack software developer with a BS degree in Web & Mobile Computing (WMC).
-                            I have experience working in a variety of areas such as full-stack web development, 
-                            object orientated programming, databases, content management systems (Drupal & WordPress), Salesforce (CRM & CMS), and more.
-                            Additionally, I'm proficient in utilizing skills in HTML, CSS, JavaScript, PHP, SQL, Java, and C#.
-                            For more information, please feel free to checkout my GitHub and LinkedIn!
+const About = () => {
+    return (
+        <div className='aboutme' id='aboutme'>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-12 col-md-6 aboutme__image-col'>
+                        <div className='aboutme__image-col__image-container'>
+                            <img src={SpaceImg} alt="Rocket ship in space" />
                         </div>
                     </div>
-                    <div className="col-12 col-lg-4 about__img__div p-4">
-                        <img src={Profile} alt="Brandon in suit smiling" />
+                    <div className='col-12 col-md-6 aboutme__content-col'>
+                        <SectionTitle title="About Me" />
+                        <div className='aboutme__content-col__content'>
+                            Hi there - I'm Brandon Mok, and I'm a full-stack developer!
+                            I enjoy learning new technologies, and I'm always looking for the next problem to solve.
+                            I have experience working in a diverse range of areas consisting anywhere from 
+                            full-stack web development to content management systems and lastly to CRMs.
+                            With each step of the way, I've thoroughly enjoyed expanding my skills and
+                            learning new things!
+                        </div>
                     </div>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
+
 export default About;

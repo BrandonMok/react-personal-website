@@ -1,16 +1,13 @@
 import React from 'react';
 
-class Mobilenav extends React.Component {
-    render() {
-        return (
-            <div id="mobile-nav">
-                <span id="closebtn" onClick={this.props.onClick}>&times;</span>
-                <ul id="mobile-nav-items">
-                    <li><a href="#about" alt="About" onClick={this.props.onClick}>About</a></li>
-                    <li><a href="#moreinfo" alt="More Info" onClick={this.props.onClick}>More</a></li>
-                </ul>
-            </div>
-        );
-    }
+const Mobilenav = ({onClick}) => {
+    return (
+        <div id="mobile-nav">
+            <ul id="mobile-nav-items">
+                <li><a href="#aboutme" alt="About" onClick={() => onClick(prev => !prev)}>about</a></li>
+                <li><a href="#skills" alt="Skills" onClick={() => onClick(prev => !prev)}>skills</a></li>
+            </ul>
+        </div>
+    );
 }
 export default Mobilenav;

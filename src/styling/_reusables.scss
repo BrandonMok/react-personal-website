@@ -1,0 +1,103 @@
+/** HEADER **/
+.header {
+  @extend .container;
+
+  &__logo-row {
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // Menu
+  &__menu-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-menu {
+      & > li {
+        display: none;
+        max-width: 50%;
+        list-style-type: none;
+        padding: 0 1em;
+
+        & > a {
+          color: $black;
+          font-size: $font-regular-plus;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+/** Footer **/
+.footer {
+  background-color: $tertiary;
+  color: $black;
+  font-weight: 600;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 5em;
+  padding: 2.5em 0;
+}
+
+/** SectionTitle - reusuable component to display section title and accent line **/
+.section-title {
+  &__title {
+    display: inline-block;
+    font-size: $font-medium;
+    font-weight: bold;
+  }
+
+  &__accentLine {
+    content: "";
+    background-color: $black;
+    display: inline-block;
+    height: 2px;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    top: 50%;
+    width: 5em;
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .section-title__title {
+    font-size: $font-medium;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .header {
+    &__logo-row {
+      display: inline;
+    }
+
+    &__menu-row {
+      .main-menu {
+        & > li {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  .section-title {
+    &__title {
+      font-size: $font-large;
+    }
+    &__accentLine {
+      width: 5em;
+    }
+  }
+}

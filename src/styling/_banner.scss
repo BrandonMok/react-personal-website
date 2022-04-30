@@ -1,0 +1,79 @@
+.banner {
+  min-height: 25vh;
+  background-color: $secondary;
+  padding: 4rem 0;
+
+  &__avatar {
+    text-align: center;
+  }
+
+  &__headline-intro {
+    text-align: center;
+
+    &__headline {
+      font-size: $heading-medium;
+      font-weight: 600;
+    }
+
+    &__subheadline {
+      font-size: $font-regular-plus;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+
+    &__item {
+      height: 2.5rem;
+      margin: 0 1.5rem;
+      width: 2.5rem;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: .75;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .banner {
+    &__headline-intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+
+      &__headline {
+        font-size: $heading-medium;
+      }
+
+      &__subheadline {
+        font-size: $heading-small;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .banner {
+    &__headline-intro {
+      &__headline {
+        font-size: $heading-large;
+      }
+
+      &__subheadline {
+        font-size: $heading-medium;
+      }
+    }
+  }
+}
