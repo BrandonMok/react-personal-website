@@ -15,14 +15,11 @@ const About = () => {
                     <div className='col-12 col-md-6 aboutme__content-col'>
                         <SectionTitle title="About Me" />
                         <div className='aboutme__content-col__content'>
-                            Hi there! I'm Brandon Mok, and I'm a full-stack developer!
-                            <br/>
-                            I enjoy learning new technologies, frameworks, and concepts while also
-                            continually looking for the next problem to solve.
-                            I've explored working in a diverse range of areas like
-                            web development, object-oriented programming, databases,
-                            content management systems (Drupal and WordPress), frameworks (Laravel and some React),
-                            and Salesforce (CRM, Experience Cloud, and Service Cloud).
+                            Hi there - I'm Brandon Mok, and I'm a full-stack developer!
+                            I enjoy learning new technologies, and I'm always looking for the next problem to solve.
+                            I have experience working in a diverse range of areas consisting anywhere from 
+                            full-stack web development to content management systems and lastly to CRMs.
+                            With every area, however, I've thoroughly enjoyed each step and learning new things everyday!
                         </div>
                     </div>
                 </div>

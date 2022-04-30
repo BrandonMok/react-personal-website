@@ -1,93 +1,9 @@
 @import '~bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import './styling/variables';
-@import './styling/navigation';
 @import './styling/reusables';
+@import './styling/globals';
+@import './styling/navigation';
+@import './styling/about';
+@import './styling/skills';
 @import './styling/banner';
-
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-
-/** ABOUT **/
-.aboutme {
-  padding: 4rem 0;
-
-  &__image-col {
-    display: none;
-  }
-}
-
-
-/** Skills **/
-.skills {
-  background-color: $secondary;
-  padding: 4rem 0;
-
-  &__area-title {
-    font-size: $font-medium;
-  }
-
-  &__disclaimer {
-    opacity: .5;
-  }
-
-  &__image-col {
-    display: none;
-  }
-
-  &__content-col__content {
-    &__FEBE-row,
-    &__other-row {
-      ul {
-        & > li {
-          list-style-image: url('./icons/cube.svg');
-        }
-      }
-    }
-  }
-}
-
-
-@include media-breakpoint-up(md) { 
-  .aboutme {
-    &__image-col {
-      display: block;
-
-      &__image-container {
-        padding: 2rem;
-
-        img {
-          display:block;
-          width: 100%;
-          height:auto;
-          max-width:500px;
-          margin: 0 auto;
-        }
-      }
-    }
-  }
-
-  .skills {
-    &__image-col {
-      display: block;
-
-      &__image-container {
-        padding: 2rem;
-
-        img {
-          display:block;
-          width: 100%;
-          height:auto;
-          max-width:500px;
-          margin: 0 auto;
-        }
-      }
-    }
-  }
-}
