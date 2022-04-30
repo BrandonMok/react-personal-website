@@ -18,8 +18,8 @@ const Header = () => {
             </div>
             <div className="header__menu-row">
                 <ul className="main-menu">
-                    <li><a href="#aboutme" alt="About">About</a></li>
-                    <li><a href="#skills" alt="Skills">Skills</a></li>
+                    <li><a href="#aboutme" alt="About">about</a></li>
+                    <li><a href="#skills" alt="Skills">skills</a></li>
                 </ul>
 
                 <span id="hamburger" onClick={() => setOpenMobileNav(prev => !prev)}>&#9776;</span>
