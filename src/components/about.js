@@ -19,7 +19,8 @@ const About = () => {
                             I enjoy learning new technologies, and I'm always looking for the next problem to solve.
                             I have experience working in a diverse range of areas consisting anywhere from 
                             full-stack web development to content management systems and lastly to CRMs.
-                            With every area, however, I've thoroughly enjoyed each step and learning new things everyday!
+                            With each step of the way, I've thoroughly enjoyed expanding my skills and
+                            learning new things!
                         </div>
                     </div>
                 </div>
