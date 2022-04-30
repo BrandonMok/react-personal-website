@@ -2,7 +2,6 @@ import React, { useState, useEffect} from 'react';
 import MobileNav from './mobilenav';
 import Logo from '../icons/logo.png';
 import $ from 'jquery';
-import anime from 'animejs/lib/anime.es.js';
 
 const Header = () => {
     const [ openMobileNav, setOpenMobileNav ] = useState(false);
