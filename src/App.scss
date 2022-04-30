@@ -1,9 +1,9 @@
 @import '~bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-@import './styling/Variables';
-@import './styling/Navigation';
-@import './styling/Reusables';
-@import './styling/Banner';
+@import './styling/variables';
+@import './styling/navigation';
+@import './styling/reusables';
+@import './styling/banner';
 
 * {
     font-family: 'Poppins', sans-serif;
