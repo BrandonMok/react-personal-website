@@ -1,10 +1,30 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import AvatarPic from '../icons/avatar.svg'
 import GithubLogo from '../icons/github.svg';
 import LinkedInLogo from '../icons/linkedin.svg';
 import SF from '../icons/salesforce.svg';
+import anime from 'animejs/lib/anime.es.js';
 
 const Banner = () => {
+
+    useEffect(() => {
+        anime.timeline({
+            easing: 'easeOutExpo',
+        })
+        .add({
+            targets: '.banner__socials__item',
+            scale: 1.5,
+            delay: 1000
+        })
+        .add({
+            targets: '.banner__socials__item',
+            scale: 1,
+            rotate: '1turn',
+            delay: 500
+        });
+
+    }, []);
+
     return (
         <div className="banner">
             <div className="container">
