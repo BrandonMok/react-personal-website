@@ -1,12 +1,25 @@
-import React from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 
-const Mobilenav = ({onClick}) => {
+const Mobilenav = () => {
+    const [ openMobileNav, setOpenMobileNav ] = useState(false);
+    const mobileNav = useRef();
+  
+    useEffect(() => {
+        let percentWidth = openMobileNav ? "45%" : "0";
+        mobileNav.current.style.width = percentWidth;
+    },[openMobileNav]);
+
+
     return (
-        <div id="mobile-nav">
-            <ul id="mobile-nav-items">
-                <li><a href="#aboutme" alt="About" onClick={() => onClick(prev => !prev)}>about</a></li>
-                <li><a href="#skills" alt="Skills" onClick={() => onClick(prev => !prev)}>skills</a></li>
-            </ul>
+        <div className="mobile-nav">
+            <span className="mobile-nav__hamburger" onClick={() => setOpenMobileNav(prev => !prev)}>&#9776;</span>
+
+            <div ref={mobileNav} className="mobile-nav__items">
+                <ul className="mobile-nav__items__list">
+                    <li><a href="#aboutme" alt="About" onClick={() => setOpenMobileNav(prev => !prev)}>about</a></li>
+                    <li><a href="#skills" alt="Skills" onClick={() => setOpenMobileNav(prev => !prev)}>skills</a></li>
+                </ul>
+            </div>
         </div>
     );
 }

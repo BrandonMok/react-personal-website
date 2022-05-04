@@ -1,16 +1,8 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import MobileNav from './mobilenav';
 import Logo from '../icons/logo.png';
-import $ from 'jquery';
 
 const Header = () => {
-    const [ openMobileNav, setOpenMobileNav ] = useState(false);
-  
-    useEffect(() => {
-        let percentWidth = openMobileNav ? "45%" : "0";
-        $("#mobile-nav").css("width", percentWidth);
-    },[openMobileNav]);
-
     return (
         <div className="header d-flex justify-content-between flex-direction-row">
             <div className="header__logo-row">
@@ -22,8 +14,7 @@ const Header = () => {
                     <li><a href="#skills" alt="Skills">skills</a></li>
                 </ul>
 
-                <span id="hamburger" onClick={() => setOpenMobileNav(prev => !prev)}>&#9776;</span>
-                <MobileNav onClick={setOpenMobileNav} />
+                <MobileNav />
             </div>
         </div>
     );
