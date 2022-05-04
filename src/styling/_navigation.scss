@@ -24,7 +24,6 @@
 
     &__list {
       margin-top: 1em;
-      list-style: none;
 
       li {
         padding: 1em 0;
@@ -34,6 +33,7 @@
           color: $black;
           font-size: $font-regular-plus;
           font-weight: bold;
+          text-decoration: none;
         }
       }
     }
