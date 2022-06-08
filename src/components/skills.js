@@ -18,9 +18,9 @@ const Skills = () => {
                                         <ul>
                                             <li>HTML</li>
                                             <li>CSS / SASS</li>
+                                            <li>Bootstrap</li>
                                             <li>Javascript</li>
                                             <li>jQuery</li>
-                                            <li>Bootstrap</li>
                                             <li>React **</li>
                                         </ul>
                                     </div>

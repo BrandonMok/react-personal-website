@@ -18,7 +18,7 @@ const About = () => {
                             I'm Brandon, and I'm a full stack developer.
                             I build custom solutions for content management systems and tackle pressing business problems with Salesforce.
                             I have experience working in a diverse range of areas consisting of web development, OOP, CMS, CRM, and frameworks. 
-                            Additionally, I enjoy learning new technologies, processes, and tools for which I'm always researching and learning new things.
+                            Additionally, I enjoy learning new technologies, processes, and tools whereby I'm always looking into new topics, concepts, and areas. 
                         </div>
                     </div>
                 </div>
