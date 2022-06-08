@@ -32,7 +32,7 @@ const Banner = () => {
                     <div className='col-12 col-md-6 banner__headline-intro'>
                         <div className='banner__headline-intro__subheadline'>Hello, I'm</div>
                         <div className='banner__headline-intro__headline'>Brandon Mok</div>
-                        <div className='banner__headline-intro__subheadline'>Full-stack Developer</div>
+                        <div className='banner__headline-intro__subheadline'>Full Stack Developer</div>
                     </div>
                     <div className='col-12 col-md-6 banner__avatar'>
                         <img src={AvatarPic} alt='avatar' />

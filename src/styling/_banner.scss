@@ -47,6 +47,10 @@
 
 @include media-breakpoint-up(md) {
   .banner {
+    &__avatar {
+      text-align: right;
+    }
+
     &__headline-intro {
       display: flex;
       flex-direction: column;
