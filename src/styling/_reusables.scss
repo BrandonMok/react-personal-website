@@ -36,7 +36,7 @@
           padding: 0 1em;
 
           & > a {
-            color: $white;
+            color: $gray-white;
             font-size: $font-regular-plus;
             font-weight: bold;
             text-decoration: none;
@@ -50,7 +50,7 @@
 /** Footer **/
 .footer {
   background-color: $primary;
-  color: $white;
+  color: $gray-white;
   font-weight: 600;
   position: relative;
   left: 0;
@@ -62,9 +62,10 @@
 /** SectionTitle - reusuable component to display section title and accent line **/
 .section-title {
   &__title {
+    color: $primary;
     display: inline-block;
     font-size: $font-medium;
-    font-weight: bold;
+    font-weight: 600;
   }
 
   &__accentLine {

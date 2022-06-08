@@ -19,6 +19,7 @@ const Skills = () => {
                                             <li>HTML</li>
                                             <li>CSS / SASS</li>
                                             <li>Javascript</li>
+                                            <li>jQuery</li>
                                             <li>Bootstrap</li>
                                             <li>React **</li>
                                         </ul>
@@ -34,7 +35,7 @@ const Skills = () => {
                                             <li>SQL</li>
                                             <li>Lando (Docker)</li>
                                             <li>Laravel</li>
-                                            <li>Drupal</li>
+                                            <li>Drupal 8 & 9</li>
                                             <li>WordPress</li>
                                         </ul>
                                     </div>
