@@ -17,8 +17,8 @@ const About = () => {
                         <div className='aboutme__content-col__content'>
                             I'm Brandon, and I'm a full stack developer.
                             I build custom solutions for content management systems and tackle pressing business problems with Salesforce.
-                            I have experience working in a diverse range of areas consisting of web development, OOP, CMS, CRM, and frameworks. 
-                            Additionally, I enjoy learning new technologies, processes, and tools whereby I'm always looking into new topics, concepts, and areas. 
+                            My experience spans across a diverse range of areas consisting of web development, OOP, CMS, CRM, databases, and frameworks. 
+                            I also enjoy learning new technologies, and I'm always looking into new areas.
                         </div>
                     </div>
                 </div>
