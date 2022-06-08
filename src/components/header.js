@@ -2,7 +2,7 @@ import React from 'react';
 import MobileNav from './mobilenav';
 import Logo from '../icons/logo.png';
 
-const Header = () => {
+export default function Header() {
     return (
         <div className="header">
             <div className="header__flexbox">
@@ -21,4 +21,3 @@ const Header = () => {
         </div>
     );
 }
-export default Header;

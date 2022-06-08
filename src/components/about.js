@@ -2,7 +2,7 @@ import React from 'react';
 import SpaceImg from '../icons/undraw_outer_space.svg';
 import SectionTitle from './sectionTitle';
 
-const About = () => {
+export default function About() {
     return (
         <div className='aboutme' id='aboutme'>
             <div className='container'>
@@ -26,5 +26,3 @@ const About = () => {
         </div>
     );
 }
-
-export default About;

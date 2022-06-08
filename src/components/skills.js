@@ -2,7 +2,7 @@ import React from 'react';
 import SectionTitle from './sectionTitle';
 import LostInSpaceImg from '../icons/undraw_lost_online.svg';
 
-const Skills = () => {
+export default function Skills() {
     return (
         <div className="skills" id="skills">
             <div className="container">
@@ -62,4 +62,3 @@ const Skills = () => {
         </div>
     );
 }
-export default Skills;
