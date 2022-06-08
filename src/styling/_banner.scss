@@ -1,7 +1,7 @@
 .banner {
-  min-height: 25vh;
   background-color: $secondary;
   padding: 4rem 0;
+  min-height: 30vh;
 
   &__avatar {
     text-align: center;
@@ -28,9 +28,9 @@
     padding-top: 2rem;
 
     &__item {
-      height: 2.5rem;
+      height: 2.75rem;
+      width: 2.75rem;
       margin: 0 1.5rem;
-      width: 2.5rem;
       opacity: 0.5;
 
       &:hover {
