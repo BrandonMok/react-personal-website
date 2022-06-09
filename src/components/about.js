@@ -16,9 +16,11 @@ export default function About() {
                         <SectionTitle title="About Me" />
                         <div className='aboutme__content-col__content'>
                             I'm Brandon, and I'm a full stack developer.
-                            I build custom solutions for content management systems and tackle pressing business problems with Salesforce.
-                            My experience spans across a diverse range of areas consisting of web development, OOP, CMS, CRM, databases, and frameworks. 
-                            I also enjoy learning new technologies, and I'm always looking into new areas.
+                            I build custom solutions for content management systems and tackle business problems with Salesforce.
+                            My experience, however, spans across a diverse range of areas consisting of web development, OOP, CMS, CRM, databases, and frameworks. 
+                            <br />
+                            <br />
+                            Besides tech, some of my other interests involve building custom keyboards, working on cars, and learning more about other industries, trades, and skills.
                         </div>
                     </div>
                 </div>

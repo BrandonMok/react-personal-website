@@ -27,12 +27,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 2em;
 
     &__item {
-      height: 2.75rem;
-      width: 2.75rem;
-      margin: 0 1.5rem;
+      height: 3em;
+      width: 3em;
+      margin: 0 1em;
       opacity: 0.5;
 
       &:hover {

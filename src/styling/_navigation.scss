@@ -8,11 +8,11 @@
   }
 
   &__items {
-    background-color: $white;
+    background-color: $gray-white;
     position: absolute;
-    height: 10rem;
-    top: 3.5rem;
-    right: 1rem;
+    height: 10em;
+    top: 3.5em;
+    right: 1em;
     width: 0;
     z-index: 10;
     overflow: hidden;
