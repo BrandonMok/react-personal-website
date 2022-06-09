@@ -1,8 +1,8 @@
 import React from 'react';
 import SectionTitle from './sectionTitle';
-import PercentageImg from '../icons/undraw_percentage.svg';
+import LostInSpaceImg from '../icons/undraw_lost_online.svg';
 
-const Skills = () => {
+export default function Skills() {
     return (
         <div className="skills" id="skills">
             <div className="container">
@@ -18,8 +18,9 @@ const Skills = () => {
                                         <ul>
                                             <li>HTML</li>
                                             <li>CSS / SASS</li>
-                                            <li>Javascript</li>
                                             <li>Bootstrap</li>
+                                            <li>Javascript</li>
+                                            <li>jQuery</li>
                                             <li>React **</li>
                                         </ul>
                                     </div>
@@ -30,10 +31,11 @@ const Skills = () => {
                                         <div className='skills__area-title'>Backend</div>
                                         <ul>
                                             <li>PHP</li>
+                                            <li>Java / Kotlin / Apex</li>
                                             <li>SQL</li>
                                             <li>Lando (Docker)</li>
                                             <li>Laravel</li>
-                                            <li>Drupal</li>
+                                            <li>Drupal 8 & 9</li>
                                             <li>WordPress</li>
                                         </ul>
                                     </div>
@@ -52,7 +54,7 @@ const Skills = () => {
                     </div>
                     <div className='col-12 col-md-6 skills__image-col'>
                         <div className='skills__image-col__image-container'>
-                            <img src={PercentageImg} alt="Man next to horizontal progress bars" />
+                            <img src={LostInSpaceImg} alt="Man next to horizontal progress bars" />
                         </div>
                     </div>
                 </div>
@@ -60,4 +62,3 @@ const Skills = () => {
         </div>
     );
 }
-export default Skills;

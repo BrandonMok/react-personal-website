@@ -1,9 +1,11 @@
 .skills {
   background-color: $secondary;
-  padding: 4rem 0;
+  padding: 4em 0;
 
   &__area-title {
+    color: $primary;
     font-size: $font-medium;
+    font-weight: 600;
   }
 
   &__disclaimer {
@@ -33,14 +35,13 @@
       display: block;
 
       &__image-container {
-        padding: 2rem;
+        padding: 2em;
 
         img {
           display: block;
-          width: 100%;
           height: auto;
           max-width: 500px;
-          margin: 0 auto;
+          width: 100%;
         }
       }
     }

@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 
-const Mobilenav = () => {
+export default function Mobilenav() {
     const [ openMobileNav, setOpenMobileNav ] = useState(false);
     const mobileNav = useRef();
   
@@ -23,4 +23,3 @@ const Mobilenav = () => {
         </div>
     );
 }
-export default Mobilenav;

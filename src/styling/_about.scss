@@ -1,8 +1,22 @@
 .aboutme {
-  padding: 4rem 0;
+  background-color: $gray-white;
+  color: $primary;
+  padding: 4em 0;
 
   &__image-col {
     display: none;
+  }
+
+  &__content-col {
+    a {
+      color: $primary;
+      font-weight: 600;
+
+      &:hover {
+        color: $secondary;
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -12,14 +26,13 @@
       display: block;
 
       &__image-container {
-        padding: 2rem;
+        padding: 2em;
 
         img {
           display: block;
-          width: 100%;
           height: auto;
           max-width: 500px;
-          margin: 0 auto;
+          width: 100%;
         }
       }
     }

@@ -2,10 +2,10 @@ import React, {useEffect} from 'react';
 import AvatarPic from '../icons/avatar.svg'
 import GithubLogo from '../icons/github.svg';
 import LinkedInLogo from '../icons/linkedin.svg';
-import SF from '../icons/salesforce.svg';
+import SFLogo from '../icons/salesforce.svg';
 import anime from 'animejs/lib/anime.es.js';
 
-const Banner = () => {
+export default function Banner() {
 
     useEffect(() => {
         anime.timeline({
@@ -32,7 +32,7 @@ const Banner = () => {
                     <div className='col-12 col-md-6 banner__headline-intro'>
                         <div className='banner__headline-intro__subheadline'>Hello, I'm</div>
                         <div className='banner__headline-intro__headline'>Brandon Mok</div>
-                        <div className='banner__headline-intro__subheadline'>Full-stack Developer</div>
+                        <div className='banner__headline-intro__subheadline'>Full Stack Developer</div>
                     </div>
                     <div className='col-12 col-md-6 banner__avatar'>
                         <img src={AvatarPic} alt='avatar' />
@@ -52,7 +52,7 @@ const Banner = () => {
                         </div>
                         <div className="banner__socials__item">
                             <a href="https://trailblazer.me/id/brmok" target="_blank" rel="noreferrer" alt="TrailBlazer link">
-                                <img src={SF} alt="Salesforce Logo" /> 
+                                <img src={SFLogo} alt="Salesforce Logo" /> 
                             </a>
                         </div>
                     </div>
@@ -61,5 +61,3 @@ const Banner = () => {
         </div>
     );
 }
-
-export default Banner;

@@ -1,7 +1,9 @@
 .banner {
-  min-height: 25vh;
   background-color: $secondary;
+  color: $primary;
+  font-weight: 400;
   padding: 4rem 0;
+  min-height: 25vh;
 
   &__avatar {
     text-align: center;
@@ -25,12 +27,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 2em;
 
     &__item {
-      height: 2.5rem;
-      margin: 0 1.5rem;
-      width: 2.5rem;
+      height: 3em;
+      width: 3em;
+      margin: 0 1em;
       opacity: 0.5;
 
       &:hover {
@@ -47,6 +49,10 @@
 
 @include media-breakpoint-up(md) {
   .banner {
+    &__avatar {
+      text-align: right;
+    }
+
     &__headline-intro {
       display: flex;
       flex-direction: column;

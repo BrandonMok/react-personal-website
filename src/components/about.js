@@ -2,7 +2,7 @@ import React from 'react';
 import SpaceImg from '../icons/undraw_outer_space.svg';
 import SectionTitle from './sectionTitle';
 
-const About = () => {
+export default function About() {
     return (
         <div className='aboutme' id='aboutme'>
             <div className='container'>
@@ -15,12 +15,18 @@ const About = () => {
                     <div className='col-12 col-md-6 aboutme__content-col'>
                         <SectionTitle title="About Me" />
                         <div className='aboutme__content-col__content'>
-                            Hi there - I'm Brandon Mok, and I'm a full-stack developer!
-                            I enjoy learning new technologies, and I'm always looking for the next problem to solve.
-                            I have experience working in a diverse range of areas consisting anywhere from 
-                            full-stack web development to content management systems and lastly to CRMs.
-                            With each step of the way, I've thoroughly enjoyed expanding my skills and
-                            learning new things!
+                            I'm Brandon, and I'm a full stack developer based out of New York.
+                            <br />
+                            <br />
+                            I graduated from the Rochester Institute of Technology in 2021 with a Bachelor's degree in Web & Mobile Computing. 
+                            During my college career, I focused on becoming a LAMP developer with knowledge in building full stack web applications.
+                            My work can be found on my <a href="https://github.com/BrandonMok" alt="Github">GitHub</a> which consists of
+                            front and backend applications, APIs (JS & Java), Java networking, IOS and Android mobile apps, and more.
+                            <br />
+                            <br />
+                            Since then, I've quickly expanded and branched my knowledge to encompass a broader skill set. My full experience now involves
+                            web development, object-oriented programming, content management systems (Drupal & WordPress), customer relationship management tools (Salesforce), databases, and frameworks. 
+                            Additionally, most of my past production work experience comes from developing custom solutions for content management systems and solving pressing business problems with Salesforce.
                         </div>
                     </div>
                 </div>
@@ -28,5 +34,3 @@ const About = () => {
         </div>
     );
 }
-
-export default About;

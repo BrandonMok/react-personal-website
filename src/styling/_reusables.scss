@@ -1,37 +1,46 @@
 /** HEADER **/
 .header {
-  @extend .container;
+  background-color: $primary;
 
-  &__logo-row {
-    overflow: hidden;
-    width: 90px;
-    height: 90px;
+  &__flexbox {
+    @extend .container;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  // Menu
-  &__menu-row {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 
-    .main-menu {
-      & > li {
-        display: none;
-        max-width: 50%;
-        list-style-type: none;
-        padding: 0 1em;
+    &__logo-row {
+      overflow: hidden;
+      width: 90px;
+      height: 90px;
 
-        & > a {
-          color: $black;
-          font-size: $font-regular-plus;
-          font-weight: bold;
-          text-decoration: none;
+      img {
+        width: 100%;
+        height: 100%;
+        padding: 0.75em;
+        object-fit: contain;
+      }
+    }
+
+    // Menu
+    &__menu-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .main-menu {
+        & > li {
+          display: none;
+          max-width: 50%;
+          list-style-type: none;
+          padding: 0 1em;
+
+          & > a {
+            color: $gray-white;
+            font-size: $font-regular-plus;
+            font-weight: bold;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -40,8 +49,8 @@
 
 /** Footer **/
 .footer {
-  background-color: $tertiary;
-  color: $black;
+  background-color: $primary;
+  color: $gray-white;
   font-weight: 600;
   position: relative;
   left: 0;
@@ -53,14 +62,15 @@
 /** SectionTitle - reusuable component to display section title and accent line **/
 .section-title {
   &__title {
+    color: $primary;
     display: inline-block;
     font-size: $font-medium;
-    font-weight: bold;
+    font-weight: 600;
   }
 
   &__accentLine {
     content: "";
-    background-color: $black;
+    background-color: $primary;
     display: inline-block;
     height: 2px;
     margin-bottom: 0.5em;
@@ -79,7 +89,7 @@
 }
 
 @include media-breakpoint-up(md) {
-  .header {
+  .header__flexbox {
     &__logo-row {
       display: inline;
     }
