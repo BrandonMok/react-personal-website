@@ -9,15 +9,19 @@ export default function Mobilenav() {
         mobileNav.current.style.width = percentWidth;
     },[openMobileNav]);
 
+    function handleMobileNavClick() {
+        console.log("clicked!");
+        setOpenMobileNav(prev => !prev);
+    }
 
     return (
         <div className="mobile-nav">
-            <span className="mobile-nav__hamburger" onClick={() => setOpenMobileNav(prev => !prev)}>&#9776;</span>
+            <span className="mobile-nav__hamburger" onClick={handleMobileNavClick}>&#9776;</span>
 
             <div ref={mobileNav} className="mobile-nav__items">
                 <ul className="mobile-nav__items__list">
-                    <li><a href="#aboutme" alt="About" onClick={() => setOpenMobileNav(prev => !prev)}>about</a></li>
-                    <li><a href="#skills" alt="Skills" onClick={() => setOpenMobileNav(prev => !prev)}>skills</a></li>
+                    <li><a href="#aboutme" alt="About" onClick={handleMobileNavClick}>about</a></li>
+                    <li><a href="#skills" alt="Skills" onClick={handleMobileNavClick}>skills</a></li>
                 </ul>
             </div>
         </div>
