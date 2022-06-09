@@ -10,7 +10,6 @@ export default function Mobilenav() {
     },[openMobileNav]);
 
     function handleMobileNavClick() {
-        console.log("clicked!");
         setOpenMobileNav(prev => !prev);
     }
 
