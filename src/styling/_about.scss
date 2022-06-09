@@ -6,6 +6,18 @@
   &__image-col {
     display: none;
   }
+
+  &__content-col {
+    a {
+      color: $primary;
+      font-weight: 600;
+
+      &:hover {
+        color: $secondary;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 @include media-breakpoint-up(md) {
