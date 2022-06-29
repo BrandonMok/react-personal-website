@@ -21,7 +21,7 @@ export default function Skills() {
                                             <li>Bootstrap</li>
                                             <li>Javascript</li>
                                             <li>jQuery</li>
-                                            <li>React **</li>
+                                            <li>React</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -47,7 +47,7 @@ export default function Skills() {
                                     <ul>
                                         <li>Salesforce</li>
                                     </ul>
-                                    <p className='skills__disclaimer'>** some experience and/or knowledge</p>
+                                    {/* <p className='skills__disclaimer'>** some experience and/or knowledge</p> */}
                                 </div>
                             </div>
                         </div>
