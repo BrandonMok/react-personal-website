@@ -13,7 +13,7 @@ export default function Banner() {
         })
         .add({
             targets: '.banner__socials__item',
-            scale: 1.5,
+            scale: 1.25,
             delay: 1000
         })
         .add({
