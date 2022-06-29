@@ -18,10 +18,10 @@ export default function Skills() {
                                         <ul>
                                             <li>HTML</li>
                                             <li>CSS / SASS</li>
-                                            <li>Bootstrap</li>
                                             <li>Javascript</li>
                                             <li>jQuery</li>
                                             <li>React</li>
+                                            <li>Bootstrap</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -31,7 +31,7 @@ export default function Skills() {
                                         <div className='skills__area-title'>Backend</div>
                                         <ul>
                                             <li>PHP</li>
-                                            <li>Java / Kotlin / Apex</li>
+                                            <li>Java / Kotlin</li>
                                             <li>SQL</li>
                                             <li>Lando (Docker)</li>
                                             <li>Laravel</li>
@@ -45,7 +45,7 @@ export default function Skills() {
                                 <div className='col-12'>
                                     <div className='skills__area-title'>Other</div>
                                     <ul>
-                                        <li>Salesforce</li>
+                                        <li>Salesforce (Experience & Service Cloud)</li>
                                     </ul>
                                     {/* <p className='skills__disclaimer'>** some experience and/or knowledge</p> */}
                                 </div>
